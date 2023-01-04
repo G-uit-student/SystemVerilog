@@ -1,0 +1,40 @@
+F:/DH/DoAn2/adder_test/transaction.sv {1 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/adder_test/transaction.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package transaction_sv_unit
+
+Top level modules:
+	--none--
+
+} {} {}} F:/DH/DoAn2/adder_test/design.sv {1 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/adder_test/design.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} F:/DH/DoAn2/adder_test/generator.sv {0 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/adder_test/generator.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Error: F:/DH/DoAn2/adder_test/generator.sv(4): (vlog-2294) The 'var' keyword is missing.
+** Error: (vlog-13069) F:/DH/DoAn2/adder_test/generator.sv(4): near "trans": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
+
+} {3.0 5.0} {}} F:/DH/DoAn2/adder_test/scoreboard.sv {0 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/adder_test/scoreboard.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Error: (vlog-13069) F:/DH/DoAn2/adder_test/scoreboard.sv(17): near ";": syntax error, unexpected ';', expecting '('.
+
+} {3.0 4.0} {}} F:/DH/DoAn2/adder_test/monitor.sv {0 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/adder_test/monitor.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Error: (vlog-13069) F:/DH/DoAn2/adder_test/monitor.sv(20): near ";": syntax error, unexpected ';', expecting '('.
+** Error: F:/DH/DoAn2/adder_test/monitor.sv(21): (vlog-2730) Undefined variable: 'trans'.
+
+} {3.0 5.0} {}} F:/DH/DoAn2/adder_test/driver.sv {0 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/adder_test/driver.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Error: (vlog-13069) F:/DH/DoAn2/adder_test/driver.sv(34): near ";": syntax error, unexpected ';', expecting '('.
+
+} {3.0 4.0} {}} F:/DH/DoAn2/adder_test/interface.sv {1 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/adder_test/interface.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling interface intf
+
+Top level modules:
+	--none--
+
+} {} {}}
