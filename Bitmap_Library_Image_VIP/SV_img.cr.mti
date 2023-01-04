@@ -1,0 +1,48 @@
+F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv {1 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package axi_stream_video_image_example_sv_unit
+-- Importing package bitmap_processing
+-- Importing package axi_stream_video_image
+-- Compiling module axi_stream_video_image_example
+
+Top level modules:
+	axi_stream_video_image_example
+
+} {} {}} F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv {2 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package axi_stream_video_image_in_vip_sv_unit
+-- Importing package bitmap_processing
+-- Importing package axi_stream_video_image
+-- Compiling module axis_video_img_in_vip
+** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vlog-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+
+Top level modules:
+	axis_video_img_in_vip
+
+} {} {}} F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv {1 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package bitmap_processing
+
+Top level modules:
+	--none--
+
+} {} {}} F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image.sv {1 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+-- Compiling package axi_stream_video_image
+
+Top level modules:
+	--none--
+
+} {} {}} F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv {2 {vlog -work work -vopt -sv -stats=none F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(76): (vlog-2610) indexed range expression contains whitespace between '-' and ':'.
+-- Compiling package axi_stream_video_image_out_vip_sv_unit
+-- Importing package bitmap_processing
+-- Importing package axi_stream_video_image
+-- Compiling module axis_video_img_out_vip
+** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(76): (vlog-2610) indexed range expression contains whitespace between '-' and ':'.
+
+Top level modules:
+	axis_video_img_out_vip
+
+} {} {}}

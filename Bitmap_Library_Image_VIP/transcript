@@ -1,0 +1,1094 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# OpenFile F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/SV_img.mpf
+# Loading project SV_img
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv failed with 2 errors.
+# Compile of axi_stream_video_image_in_vip.sv failed with 2 errors.
+# Compile of axi_stream_video_image_out_vip.sv failed with 2 errors.
+# Compile of bitmap_processing.sv failed with 1 errors.
+# 5 compiles, 4 failed with 7 errors.
+# Error opening F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/(vlog-13069) F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv
+# Path name 'F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/(vlog-13069) F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv' doesn't exist.
+# Compile of bitmap_processing.sv failed with 1 errors.
+# Compile of bitmap_processing.sv was successful.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv failed with 1 errors.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of axi_stream_video_image_example.sv was successful.
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 13:59:04 on Jan 03,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vopt-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(82): (vopt-2697) LSB 32 of part-select into 'pixel_buffer' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Error: Bitmap size is not meet VIP setting
+# Created a bitmap (        960 x         540).
+# A time value could not be extracted from the current line
+# Compile of axi_stream_video_image_example.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Error: Bitmap size is not meet VIP setting
+# Created a bitmap (        960 x         540).
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vopt-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(82): (vopt-2697) LSB 32 of part-select into 'pixel_buffer' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Created a bitmap (        512 x         512).
+# Compile of axi_stream_video_image_example.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Created a bitmap (        512 x         512).
+add wave -position insertpoint sim:/axi_stream_video_image_example/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Created a bitmap (        512 x         512).
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/cat.bmp" for reading.
+# No such file or directory. (errno = ENOENT)    : F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv(99)
+#    Time: 95 ns  Iteration: 1  Instance: /axi_stream_video_image_example
+# ** Error: Could not open the file F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/cat.bmp.
+#    Time: 95 ns  Scope: bitmap_processing.Bitmap.read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 103
+# Error: Bitmap size is not meet VIP setting
+# Created a bitmap (        512 x         512).
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# ** Error: The target file F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/cat.png is not a bitmap file.
+#    Time: 95 ns  Scope: bitmap_processing.Bitmap.read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 110
+# Error: Bitmap size is not meet VIP setting
+# Created a bitmap (        512 x         512).
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vopt-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(82): (vopt-2697) LSB 32 of part-select into 'pixel_buffer' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# ** Error: The target file F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/cat.png is not a bitmap file.
+#    Time: 95 ns  Scope: bitmap_processing.Bitmap.read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 110
+# Error: Bitmap size is not meet VIP setting
+# Created a bitmap (        480 x         480).
+quit sim
+# unknown switch: sim
+quit -sim
+# End time: 14:26:05 on Jan 03,2023, Elapsed time: 0:27:01
+# Errors: 1, Warnings: 13
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 14:26:51 on Jan 03,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vopt-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(82): (vopt-2697) LSB 32 of part-select into 'pixel_buffer' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+# Compile of axi_stream_video_image_example.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv failed with 4 errors.
+# 5 compiles, 1 failed with 4 errors.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv failed with 4 errors.
+# 5 compiles, 1 failed with 4 errors.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv failed with 4 errors.
+# 5 compiles, 1 failed with 4 errors.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+quit -sim
+# End time: 14:41:22 on Jan 03,2023, Elapsed time: 0:14:31
+# Errors: 0, Warnings: 12
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 14:50:17 on Jan 03,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+quit -sim
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv failed with 6 errors.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 1 failed with 6 errors.
+# End time: 14:50:32 on Jan 03,2023, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 11
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv failed with 6 errors.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 1 failed with 6 errors.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 14:51:56 on Jan 03,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vopt-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(82): (vopt-2697) LSB 32 of part-select into 'pixel_buffer' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vopt-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(82): (vopt-2697) LSB 32 of part-select into 'pixel_buffer' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+add wave -position insertpoint sim:/axi_stream_video_image_example/*
+run
+run
+run
+run
+run
+run
+run
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vopt-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(82): (vopt-2697) LSB 32 of part-select into 'pixel_buffer' is out of bounds.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+add wave -position insertpoint sim:/axi_stream_video_image_example/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 14:59:22 on Jan 03,2023, Elapsed time: 0:07:26
+# Errors: 0, Warnings: 12
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+add wave -position insertpoint sim:/axi_stream_video_image_example/*
+# Unrecognized dataset prefix: sim
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 15:03:54 on Jan 03,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+add wave -position insertpoint sim:/axi_stream_video_image_example/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:04:36 on Jan 03,2023, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 11
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 15:14:15 on Jan 03,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+add wave -position insertpoint sim:/axi_stream_video_image_example/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:15:11 on Jan 03,2023, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 11
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 15:16:16 on Jan 03,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv(62): (vopt-2241) Connection width does not match width of port 's_axis_video_in_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(40).
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv(50): (vopt-2241) Connection width does not match width of port 'm_axis_video_out_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(41).
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vopt-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (256) does not match connection size (32) for port 'm_axis_video_out_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(41).
+#    Time: 0 ns  Iteration: 0  Instance: /axi_stream_video_image_example/in_vip File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (256) does not match connection size (32) for port 's_axis_video_in_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(40).
+#    Time: 0 ns  Iteration: 0  Instance: /axi_stream_video_image_example/out_vip File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv Line: 62
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+quit -sim
+# End time: 15:16:30 on Jan 03,2023, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 16
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv failed with 5 errors.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 1 failed with 5 errors.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv failed with 5 errors.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 1 failed with 5 errors.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv failed with 5 errors.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 1 failed with 5 errors.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 15:31:53 on Jan 03,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv(62): (vopt-2241) Connection width does not match width of port 's_axis_video_in_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(40).
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv(50): (vopt-2241) Connection width does not match width of port 'm_axis_video_out_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(41).
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (256) does not match connection size (32) for port 'm_axis_video_out_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(41).
+#    Time: 0 ns  Iteration: 0  Instance: /axi_stream_video_image_example/in_vip File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (256) does not match connection size (32) for port 's_axis_video_in_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(40).
+#    Time: 0 ns  Iteration: 0  Instance: /axi_stream_video_image_example/out_vip File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv Line: 62
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+quit -sim
+# End time: 15:40:38 on Jan 03,2023, Elapsed time: 0:08:45
+# Errors: 0, Warnings: 19
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful with warnings.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 15:50:06 on Jan 03,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv(62): (vopt-2241) Connection width does not match width of port 's_axis_video_in_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(40).
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv(50): (vopt-2241) Connection width does not match width of port 'm_axis_video_out_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(41).
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(76): (vopt-2610) indexed range expression contains whitespace between '-' and ':'.
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(61): (vopt-2240) Treating stand-alone use of function 'read' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (256) does not match connection size (32) for port 'm_axis_video_out_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(41).
+#    Time: 0 ns  Iteration: 0  Instance: /axi_stream_video_image_example/in_vip File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (256) does not match connection size (32) for port 's_axis_video_in_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(40).
+#    Time: 0 ns  Iteration: 0  Instance: /axi_stream_video_image_example/out_vip File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv Line: 62
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+quit -sim
+# End time: 15:50:22 on Jan 03,2023, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 17
+# Compile of axi_stream_video_image.sv was successful.
+# Compile of axi_stream_video_image_example.sv was successful.
+# Compile of axi_stream_video_image_in_vip.sv was successful with warnings.
+# Compile of axi_stream_video_image_out_vip.sv was successful with warnings.
+# Compile of bitmap_processing.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.axi_stream_video_image_example
+# vsim -gui work.axi_stream_video_image_example 
+# Start time: 16:18:32 on Jan 03,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv(62): (vopt-2241) Connection width does not match width of port 's_axis_video_in_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(40).
+# ** Warning: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv(50): (vopt-2241) Connection width does not match width of port 'm_axis_video_out_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(41).
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading sv_std.std
+# Loading work.axi_stream_video_image(fast)
+# Loading work.bitmap_processing(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 107
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 114
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 115
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 116
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 139
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 143
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::read/#anonblk#25553959#141#4#/#anonblk#25553959#146#4# File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 147
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fseek'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 206
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fread'.
+#    Time: 0 ns  Iteration: 0  Region: /bitmap_processing::Bitmap::readBitmapInfoHead File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/bitmap_processing.sv Line: 207
+# Loading work.axi_stream_video_image_example_sv_unit(fast)
+# Loading work.axi_stream_video_image_example(fast)
+# Loading work.axi_stream_video_image_in_vip_sv_unit(fast)
+# Loading work.axis_video_img_in_vip(fast)
+# Loading work.axi_stream_video_image_out_vip_sv_unit(fast)
+# Loading work.axis_video_img_out_vip(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (256) does not match connection size (32) for port 'm_axis_video_out_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_in_vip.sv(41).
+#    Time: 0 ns  Iteration: 0  Instance: /axi_stream_video_image_example/in_vip File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv Line: 50
+# ** Warning: (vsim-3015) [PCDPC] - Port size (256) does not match connection size (32) for port 's_axis_video_in_tdata'. The port definition is at: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_out_vip.sv(40).
+#    Time: 0 ns  Iteration: 0  Instance: /axi_stream_video_image_example/out_vip File: F:/DH/DoAn2/SystemVerilog-Bitmap-Library-AXI-Image-VIP-main/axi_stream_video_image_example.sv Line: 62
+run
+# Start read a bitmap (        640 x         426).
+# Created a bitmap (        640 x         426).
+quit -sim
+# End time: 16:33:37 on Jan 03,2023, Elapsed time: 0:15:05
+# Errors: 0, Warnings: 15
